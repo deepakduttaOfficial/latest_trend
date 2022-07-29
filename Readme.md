@@ -4,7 +4,7 @@
 
 ![Test Image 1](./thumbnail.png)
 
-## Creator Name: **Deepak**
+## Creator Name: **Deepak Dutta**
 
 ## Duration : **2 hours**
 
