@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --defaultPadding: 2rem 5rem;
+}
+
+.container {
+  margin: var(--defaultPadding);
+}
+
+/* Navbar Section  */
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+img[alt="brand-logo"] {
+  height: 40px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item {
+  margin: 0 21px;
+  font-size: 23px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 450;
+  cursor: pointer;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.list > li:nth-child(1) {
+  font-weight: 800;
+  order: -2;
+}
+
+.list > li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 70%;
+  background-color: #000;
+  border: 1.3px solid black;
+  top: 28px;
+}
+
+.list > li:nth-child(3) {
+  order: -1;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  margin: 10px 4px 0 0;
+}
+
+svg {
+  height: 25px;
+}
+
+.nav-button {
+  margin: 0 4px;
+  padding: 3px 36px 0px;
+  border-radius: 9px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+/*   <!-- Hero Banner Section --> */
+section[aria-label="banner"] {
+  margin-top: 90px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.hero-container > div:nth-child(4) > img {
+  position: absolute;
+  left: 0;
+  height: 475px;
+}
+
+.star {
+  position: absolute;
+  right: 70px;
+}
+.star > img {
+  height: 55px;
+}
+.globe {
+  position: absolute;
+  top: -45px;
+  left: 40rem;
+}
+.globe > img {
+  height: 55px;
+}
+
+.hero-container > .square {
+  margin: 14rem 0 0 9rem;
+}
+.hero-container > .square > img {
+  height: 300px;
+}
+
+.square::after {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: url("./assets/start.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  top: 28rem;
+  left: 31rem;
+}
+.square::after > img {
+  height: 40px;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 3.2rem;
+  margin: 5rem 0 2rem;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+}
+
+.hero-description {
+  width: 75%;
+  color: #929292;
+  text-align: center;
+  line-height: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.hero-container-right > div:nth-child(3) {
+  margin-top: 5rem;
+}
+
+.button-email {
+  padding: 4px 20px;
+  border-radius: 9px;
+  border: 2px solid #848282;
+  outline: none;
+  color: #4c4949;
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.button-join {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif;
+  padding: 2px;
+  margin-left: 1rem;
+}
+
+.hero-container-right > div:nth-child(4) {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-heading {
+  margin: 1rem 0;
+  font-size: 16px;
+  color: #5c5c5c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons > span > img {
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+/* -------Complete--------- */
+
+/* -----Extra feture-------- */
+.list > li:nth-child(1) ~ li:hover::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 70%;
+  background-color: #000;
+  border: 1px solid black;
+  top: 28px;
+}
+
+/* -----Box shodow---- */
+.nav-button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.button-email:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+
+.button-join:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+
+.star > img:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+  cursor: pointer;
+}
